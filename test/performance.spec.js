@@ -23,9 +23,8 @@
 			p.spawn(function (data) {
 				for (var i = 0; i < data.length; ++i) {
 					var n = data[i];
-					var i = 0;
-					while (++i < n * n) { }
-					data[i] = i;
+					for (square = 0; square < n * n; ++square) { }
+					data[i] = square;
 				}
 				return data;
 			}).then(function (data) {
